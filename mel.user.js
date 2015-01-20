@@ -4,7 +4,7 @@
 // @description scroll to next/prev new comment
 //// @require  http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
 // @include *.esreality.com*
-// @version     2
+// @version     3
 // @grant       none
 // ==/UserScript==
 
@@ -16,8 +16,9 @@ var UP = 38;
 function scrollTo(selector, elem_num) {
     var comments = $(selector);
     
-    elem_num = Math.min(comments.length-1, elem_num);
+    
     elem_num = Math.max(-1, elem_num)
+    elem_num = Math.min(comments.length-1, elem_num);
     comments.get(elem_num).scrollIntoView();
     console.log(elem_num)
     return elem_num
