@@ -26,7 +26,7 @@ function scrollTo(selector, elem_num) {
 
 
 $(window).load(function() {
-    $("html").keyup(function(evt) {
+    $("html").keydown(function(evt) {
         if (evt.ctrlKey && evt.keyCode == UP) {
             curr_comment -= 1;
             curr_comment = scrollTo(comments_selector, curr_comment);
