@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        esr scroll
 // @namespace   mel
-// @description scroll to next/prev new post
+// @description scroll to next/prev new comment
 //// @require  http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
 // @include *.esreality.com*
 // @version     1
