@@ -17,7 +17,7 @@ function scrollTo(selector, elem_num) {
     var comments = $(selector);
     
     
-    elem_num = Math.max(-1, elem_num)
+    elem_num = Math.max(0, elem_num)
     elem_num = Math.min(comments.length-1, elem_num);
     comments.get(elem_num).scrollIntoView();
     console.log(elem_num)
