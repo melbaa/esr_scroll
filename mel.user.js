@@ -3,7 +3,8 @@
 // @namespace   mel
 // @description scroll to next/prev new comment
 //// @require  http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
-// @include *.esreality.com*
+// @include http://*.esreality.com/*
+// @include http://esreality.com/*
 // @version     3
 // @homepage https://github.com/melbaa/esr_scroll/
 // @grant       none
