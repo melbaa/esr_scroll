@@ -5,7 +5,7 @@
 //// @require  http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
 // @include http://*.esreality.com/*
 // @include http://esreality.com/*
-// @version     3
+// @version     4
 // @homepage https://github.com/melbaa/esr_scroll/
 // @grant       none
 // ==/UserScript==
@@ -31,9 +31,11 @@ $(window).load(function() {
         if (evt.ctrlKey && evt.keyCode == UP) {
             curr_comment -= 1;
             curr_comment = scrollTo(comments_selector, curr_comment);
+            evt.preventDefault();
         } else if (evt.ctrlKey && evt.keyCode == DOWN) {
             curr_comment += 1;
             curr_comment = scrollTo(comments_selector, curr_comment);
+            evt.preventDefault();
         }
     });
 });
