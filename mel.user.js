@@ -11,7 +11,7 @@
 // ==/UserScript==
 
 var curr_comment = -1;
-var comments_selector = ".commentboxnew";
+var comments_selector = ".commentboxnew:visible";
 var DOWN = 40;
 var UP = 38;
 
